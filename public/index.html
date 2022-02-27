@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acepay - Twitter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="text-[#3d3d3d]">
+    <div class="w-full flex items-center">
+      <div class="max-w-md rounded-2xl mx-auto">
+        <button
+          class="bg-blue-700 px-5 py-5 rounded-md text-lg font-bold text-white"
+        >
+          Click here to start
+        </button>
+      </div>
+    </div>
+    <div
+      id="modal-overlay"
+      class="w-full h-screen inset-0 bg-gray-700 bg-opacity-50 overflow-y-auto flex items-center"
+    >
+      <div id="modal" class="w-[80%] rounded mx-auto bg-white p-5">
+        <div class="close-btn mb-2">
+          <img src="close-btn.png" alt="" class="float-right" />
+        </div>
+        <div class="modal-wrapper flex clear-both">
+          <div class="main-div w-2/3 mt-5">
+            <div class="main-div-title flex justify-between">
+              <div class="left flex space-x-3 items-center">
+                <div
+                  class="icon bg-blue-700 w-10 h-10 rounded-full flex items-center"
+                >
+                  <img src="card-icon.png" alt="" class="rotate-45 mx-auto" />
+                </div>
+
+                <div class="font-bold text-lg">
+                  AceCoin<em class="font-normal not-italic">Pay</em>
+                </div>
+              </div>
+
+              <div class="right">
+                <span
+                  class="bg-gray-900 text-lg text-white font-medium p-1 rounded"
+                  >0</span
+                >
+                <span
+                  class="bg-gray-900 text-lg text-white font-medium p-1 rounded"
+                  >1</span
+                >
+                <span class="bg-white text-lg font-medium p-1 rounded">:</span>
+                <span
+                  class="bg-gray-900 text-lg text-white font-medium p-1 rounded"
+                  >1</span
+                >
+                <span
+                  class="bg-gray-900 text-lg text-white font-medium p-1 rounded"
+                  >9</span
+                >
+              </div>
+            </div>
+            <div class="form mt-10">
+              <form action="">
+                <div class="card-no mb-4">
+                  <div class="form-info flex justify-between">
+                    <span class="font-bold">Card Number</span>
+
+                    <span class="font-bold flex text-blue-700"
+                      ><img src="edit-btn.png" alt="" class="mr-3" /> Edit</span
+                    >
+                  </div>
+                  <label for="" class="font-medium text-gray-500"
+                    >Enter the 16-digit card number on the card</label
+                  ><br /><br />
+                  <input
+                    type="text"
+                    placeholder="2412 - 7512 -3412 - 3456"
+                    class="text-gray-700 w-full px-3 py-5 border-2 rounded-lg bg-gray-100 focus:bg-blue-100 outline-blue-700"
+                  />
+                </div>
+
+                <div class="cvv-no mb-4">
+                  <div class="form-info flex justify-between">
+                    <span class="font-bold">CVV Number</span>
+                  </div>
+                  <label for="" class="font-medium text-gray-500 mr-16"
+                    >Enter the 3-digit number on the card</label
+                  >
+                  <input
+                    type="number"
+                    maxlength="3"
+                    size="3"
+                    placeholder="000"
+                    class="text-gray-700 w-full md:w-[50%] px-3 py-5 border-2 rounded-lg bg-gray-100 ml-14 focus:bg-blue-100 outline-blue-700"
+                  />
+                </div>
+
+                <div class="expiry-no mb-4">
+                  <div class="form-info flex justify-between">
+                    <span class="font-bold">Expiry Date</span>
+                  </div>
+                  <label for="" class="font-medium text-gray-500 mr-16"
+                    >Enter the expiration date of the card</label
+                  >
+                  <span class="expiry-input md:ml-16 space-x-7">
+                    <input
+                      type="number"
+                      placeholder="00"
+                      maxlength="2"
+                      size="2"
+                      class="text-gray-700 w-[50%] md:w-[20%] px-3 py-5 border-2 rounded-lg bg-gray-100 focus:bg-blue-100 outline-blue-700"
+                    />
+                    <span class="font-bold">/</span>
+                    <input
+                      type="number"
+                      placeholder="00"
+                      maxlength="2"
+                      size="2"
+                      class="text-gray-700 w-[50%] md:w-[20%] px-3 py-5 border-2 rounded-lg bg-gray-100 focus:bg-blue-100 outline-blue-700"
+                    />
+                  </span>
+                </div>
+
+                <div class="pwd-no mb-4">
+                  <div class="form-info flex justify-between">
+                    <span class="font-bold">Password</span>
+                  </div>
+                  <label for="" class="font-medium text-gray-500 mr-40"
+                    >Enter your dynamic password</label
+                  >
+                  <input
+                    type="password"
+                    placeholder="password"
+                    class="text-gray-700 w-full md:w-[50%] px-3 py-5 border-2 rounded-lg bg-gray-100 focus:bg-blue-100 ml-2 outline-blue-700"
+                  />
+                </div>
+                <button
+                  class="bg-blue-700 text-white font-bold px-3 py-5 rounded-lg w-full block"
+                >
+                  Pay Now
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="side-div mt-5 pl-5">
+            <div class="blue-bg bg-blue-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
